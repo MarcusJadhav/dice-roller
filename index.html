@@ -1,51 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dice Roller</title>
     <style>
-        .main-container {
-            width: 450px;
-            padding: 5px;
-            margin: 10px auto;
-            border-radius: 15px;
-            box-shadow: 1px 1px 10px 1px gray;
-        }
+      body {
+        background-color: #ffffffe8;
+      }
 
-        .bg-img {
-            display: block;
-            margin: 1px auto;
-            height: 290px;
-            width: 450px;
-            object-fit: contain;
-        }
+      .title {
+        font-size: 30px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+      }
 
-        .main-img {
-            height: 290px;
-            display: block;
-            margin: 10px auto;
-        }
+      .main-container {
+        background-color: #fff;
+        width: 450px;
+        padding: 5px;
+        margin: 10px auto;
+        border-radius: 15px;
+        box-shadow: 1px 1px 10px 1px gray;
+      }
 
-        .roll-btn {
-            border: none;
-            padding: 10px 20px;
-            border-radius: 20px;
-            font-size: 20px;
-            width: 100px;
-            background-color: #fe4f51;
-            display: block;
-            margin: 10px auto;
-            cursor: pointer;
-        }
+      .bg-img {
+        display: block;
+        margin: 1px auto;
+        height: 250px;
+        width: 350px;
+        object-fit: contain;
+      }
 
+      .main-img {
+        height: 250px;
+        display: block;
+        margin: 10px auto;
+      }
+
+      .roll-btn {
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-size: 20px;
+        width: 100px;
+        background-color: #fe4f51;
+        display: block;
+        margin: 10px auto;
+        cursor: pointer;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <h1 class="title" id="title">Dice Roller 🎲</h1>
     <div class="main-container">
-    <img src="./images/dice.png" alt="dice" class="main-img">
-    <img src="./images/background.jpg" alt="" class="bg-img">
-    <button type="button" class="roll-btn">Roll</button>
-</div>
-</body>
+      <img src="./images/dice.png" alt="dice" class="main-img" id="main-img" />
+      <img src="./images/background.jpg" alt="" class="bg-img" />
+      <button type="button" class="roll-btn" onclick="rollDice()">Roll</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
 </html>
